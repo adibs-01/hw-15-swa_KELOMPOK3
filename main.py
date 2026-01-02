@@ -51,6 +51,11 @@ app = Flask(__name__)
 def memes():
     return """1303199992 - Memes Raja Doraja\n1302239126 - Memes""" # Change to your group's member; format (NIM - Name)
 
+@app.route("/ip-public"):
+def getIpPublic():
+    ipPublic = get_public_ip()
+    return f"<h1> {ipPublic}:{PORT}</h1>"
+
 @app.route("/log")
 def trigger_memes():
     ipPrivate = get_private_ip()
