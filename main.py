@@ -49,7 +49,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def memes():
-    return """1303199992 - Memes Raja Doraja\n1302239126 - Memes""" # Change to your group's member; format (NIM - Name)
+    return """103012300499 - Adi Bintang Syahputra - Memes""" # Change to your group's member; format (NIM - Name)
+    return """103012300288 - Muhammad Ihsan Naufal - Memes""" # Change to your group's member; format (NIM - Name)
+    return """103012330117 - Ezra Mangasi Andika Sibuea - Memes""" # Change to your group's member; format (NIM - Name)
 
 @app.route("/ip-public")
 def getIpPublic():
